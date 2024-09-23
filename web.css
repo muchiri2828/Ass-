@@ -1,0 +1,171 @@
+
+* {
+    box-sizing: border-box;
+}
+
+
+body {
+  background-image: url('istockphoto-120475399-612x612.jpg'); 
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat; 
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+
+  display: flex; 
+  justify-content: center; 
+  align-items: center; 
+  position: relative; 
+}
+
+.logo-container {
+  position: absolute;
+  top: 10px; 
+  left: 10px; 
+}
+
+.website-name {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 48px;
+  font-weight: bold;
+  color: red;
+  margin: 0; 
+}
+
+a {
+    color: blue;
+    font-size: 14px;
+    text-decoration: none;
+    margin: 15px 0;
+}
+
+button {
+    border-radius: 20px;
+    border: 1px solid red;
+    background-color: red;
+    color: #FFFFFF;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 12px 45px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    transition: transform 80ms ease-in;
+    padding: 12px 20px;
+    width: 100%;
+}
+
+button:focus {
+    outline: none;
+}
+
+button.ghost {
+    background-color: transparent;
+    border-color: #FFFFFF;
+}
+
+form {
+    background-color: #FFFFFF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 50px;
+    height: 100%;
+    text-align: center;
+}
+
+input {
+    background-color: #eee;
+    border: none;
+    padding: 12px 15px;
+    margin: 8px 0;
+    width: 100%;
+}
+
+.container {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25),
+    0 10px 10px rgba(0, 0, 0, 0.22);
+    position: relative;
+    overflow: hidden;
+    width: 768px;
+    max-width: 100%;
+    min-height: 480px;
+    display: flex;
+    flex-direction: row;
+    z-index: 999;
+}
+
+.form-container {
+    width: 50%;
+    height: 100%;
+    transition: all 0.6s ease-in-out;
+    z-index: 999;
+}
+.login-container {
+    right: 10;
+    width: 50%;
+    z-index: 999;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.sign-in-container h1 {
+    margin-bottom: 20px;
+}
+
+.sign-in-container p {
+    margin-bottom: 40px;
+}
+
+  #reset-form {
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; 
+  }
+  
+  #reset-email {
+    display: flex;
+    justify-content: center;
+    width: 100%; 
+    padding: 10px; 
+    margin-bottom: 20px; 
+    border: 1px solid #ccc; 
+    border-radius: 5px; 
+  }
+  
+ 
+  #reset-form button[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: #fff; 
+    border: none; 
+    border-radius: 5px; 
+    cursor: pointer;
+  }
+  
+  
+  .success-message {
+    color:green;
+    font-size: 16px; 
+    margin-top: 20px; 
+  }
+  
+  
+  @media (max-width: 768px) {
+    .login-container {
+      max-width: 250px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .login-container {
+      max-width: 200px; 
+    }
+  }
